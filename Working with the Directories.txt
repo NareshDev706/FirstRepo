@@ -1,0 +1,111 @@
+			Basic Linux Commands
+			==============
+
+
+Working with Directories
++++++++++++++++
+
+----> To display current working directory
+
+	$pwd
+
+----> To change your current directory
+
+	$cd <dir-name>
+
+----> To go the home directory directly
+
+	$cd ~
+
+----> To go to the parent directory i.e the one just above to current dir
+
+	$cd ..
+
+----> To go the previous directory
+
+	$cd -
+Example:
+
+$ pwd
+/home/beerenaresh
+$ cd /opt/containerd/
+$ pwd
+/opt/containerd
+$ cd -
+/home/beerenaresh
+
+
+-----> To go the root directory
+
+	$cd /
+
+-----> To go the home directory
+
+	$cd 
+
+beerenaresh@beerenaresh-virtual-machine:~$ cd /
+beerenaresh@beerenaresh-virtual-machine:/$ pwd
+/
+beerenaresh@beerenaresh-virtual-machine:/$ cd
+beerenaresh@beerenaresh-virtual-machine:~$ pwd
+/home/beerenaresh
+
+
+
+----> To make directory
+
+	$mkdir <dir-name>
+
+----> To remove an empty directory
+
+	$rmdir <dir-name>
+
+----> To remove multiple empty directories
+
+	$rmdir <dir-name1> <dir-name2> <dir-name3>
+
+----> To remove an directory with data
+
+	$rm -r <dir-name>
+
+----> To rename a directory
+
+	$mv <old-dir name> <name-dir name>	
+
+----> To change the directory (i.e forward direction)
+
+	$cd <dir-name>
+
+----> To backward direction
+
+	$cd ..
+
+----> To backward two steps
+
+	$cd ../..
+
+----> To create a folder with sub- folders
+
+	$mkdir -p <dir1-name>/<dir2-name>/<die3-name>
+
+Example:
+
+$ mkdir -p dir2/dir3/dir4
+beerenaresh@beerenaresh-virtual-machine:~/dir1$ tree dir2
+dir2
+└── dir3
+    └── dir4
+
+2 directories, 0 files
+
+
+
+-----> To create a directory in home directory
+
+	$mkdir ~/<dir-name>
+
+
+
+
+
+
